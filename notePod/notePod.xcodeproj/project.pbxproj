@@ -7,74 +7,96 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D411649825AD96CC00FC8E36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D411649725AD96CC00FC8E36 /* AppDelegate.m */; };
-		D411649B25AD96CC00FC8E36 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D411649A25AD96CC00FC8E36 /* SceneDelegate.m */; };
-		D411649E25AD96CC00FC8E36 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D411649D25AD96CC00FC8E36 /* ViewController.m */; };
-		D41164A125AD96CC00FC8E36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D411649F25AD96CC00FC8E36 /* Main.storyboard */; };
-		D41164A425AD96CC00FC8E36 /* notePod.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D41164A225AD96CC00FC8E36 /* notePod.xcdatamodeld */; };
-		D41164A625AD96D200FC8E36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D41164A525AD96D200FC8E36 /* Assets.xcassets */; };
-		D41164A925AD96D200FC8E36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41164A725AD96D200FC8E36 /* LaunchScreen.storyboard */; };
-		D41164AC25AD96D200FC8E36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D41164AB25AD96D200FC8E36 /* main.m */; };
+		7B85E9322143DAA421EDE258 /* libPods-notePod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D937212075974096F30D4719 /* libPods-notePod.a */; };
+		D411651725ADA40800FC8E36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D411651625ADA40800FC8E36 /* AppDelegate.m */; };
+		D411651A25ADA40800FC8E36 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D411651925ADA40800FC8E36 /* SceneDelegate.m */; };
+		D411651D25ADA40800FC8E36 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D411651C25ADA40800FC8E36 /* ViewController.m */; };
+		D411652025ADA40800FC8E36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D411651E25ADA40800FC8E36 /* Main.storyboard */; };
+		D411652225ADA40F00FC8E36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D411652125ADA40F00FC8E36 /* Assets.xcassets */; };
+		D411652525ADA40F00FC8E36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D411652325ADA40F00FC8E36 /* LaunchScreen.storyboard */; };
+		D411652825ADA40F00FC8E36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D411652725ADA40F00FC8E36 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D411649325AD96CC00FC8E36 /* notePod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notePod.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D411649625AD96CC00FC8E36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D411649725AD96CC00FC8E36 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D411649925AD96CC00FC8E36 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		D411649A25AD96CC00FC8E36 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		D411649C25AD96CC00FC8E36 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D411649D25AD96CC00FC8E36 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D41164A025AD96CC00FC8E36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D41164A325AD96CC00FC8E36 /* notePod.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = notePod.xcdatamodel; sourceTree = "<group>"; };
-		D41164A525AD96D200FC8E36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D41164A825AD96D200FC8E36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D41164AA25AD96D200FC8E36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D41164AB25AD96D200FC8E36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		607433EF3181706626A6DECF /* Pods-notePod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notePod.release.xcconfig"; path = "Target Support Files/Pods-notePod/Pods-notePod.release.xcconfig"; sourceTree = "<group>"; };
+		64BD3725024B22C15FDDDAAE /* Pods-notePod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notePod.debug.xcconfig"; path = "Target Support Files/Pods-notePod/Pods-notePod.debug.xcconfig"; sourceTree = "<group>"; };
+		D411651225ADA40800FC8E36 /* notePod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notePod.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D411651525ADA40800FC8E36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D411651625ADA40800FC8E36 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D411651825ADA40800FC8E36 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		D411651925ADA40800FC8E36 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		D411651B25ADA40800FC8E36 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D411651C25ADA40800FC8E36 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D411651F25ADA40800FC8E36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D411652125ADA40F00FC8E36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D411652425ADA40F00FC8E36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D411652625ADA40F00FC8E36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D411652725ADA40F00FC8E36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D937212075974096F30D4719 /* libPods-notePod.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-notePod.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D411649025AD96CC00FC8E36 /* Frameworks */ = {
+		D411650F25ADA40800FC8E36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B85E9322143DAA421EDE258 /* libPods-notePod.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D411648A25AD96CC00FC8E36 = {
+		8DEEC6A4F387C502465B9756 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D411649525AD96CC00FC8E36 /* notePod */,
-				D411649425AD96CC00FC8E36 /* Products */,
+				64BD3725024B22C15FDDDAAE /* Pods-notePod.debug.xcconfig */,
+				607433EF3181706626A6DECF /* Pods-notePod.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B4856E109E27F66F2EFA9437 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D937212075974096F30D4719 /* libPods-notePod.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D411650925ADA40800FC8E36 = {
+			isa = PBXGroup;
+			children = (
+				D411651425ADA40800FC8E36 /* notePod */,
+				D411651325ADA40800FC8E36 /* Products */,
+				8DEEC6A4F387C502465B9756 /* Pods */,
+				B4856E109E27F66F2EFA9437 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		D411649425AD96CC00FC8E36 /* Products */ = {
+		D411651325ADA40800FC8E36 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D411649325AD96CC00FC8E36 /* notePod.app */,
+				D411651225ADA40800FC8E36 /* notePod.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D411649525AD96CC00FC8E36 /* notePod */ = {
+		D411651425ADA40800FC8E36 /* notePod */ = {
 			isa = PBXGroup;
 			children = (
-				D411649625AD96CC00FC8E36 /* AppDelegate.h */,
-				D411649725AD96CC00FC8E36 /* AppDelegate.m */,
-				D411649925AD96CC00FC8E36 /* SceneDelegate.h */,
-				D411649A25AD96CC00FC8E36 /* SceneDelegate.m */,
-				D411649C25AD96CC00FC8E36 /* ViewController.h */,
-				D411649D25AD96CC00FC8E36 /* ViewController.m */,
-				D411649F25AD96CC00FC8E36 /* Main.storyboard */,
-				D41164A525AD96D200FC8E36 /* Assets.xcassets */,
-				D41164A725AD96D200FC8E36 /* LaunchScreen.storyboard */,
-				D41164AA25AD96D200FC8E36 /* Info.plist */,
-				D41164AB25AD96D200FC8E36 /* main.m */,
-				D41164A225AD96CC00FC8E36 /* notePod.xcdatamodeld */,
+				D411651525ADA40800FC8E36 /* AppDelegate.h */,
+				D411651625ADA40800FC8E36 /* AppDelegate.m */,
+				D411651825ADA40800FC8E36 /* SceneDelegate.h */,
+				D411651925ADA40800FC8E36 /* SceneDelegate.m */,
+				D411651B25ADA40800FC8E36 /* ViewController.h */,
+				D411651C25ADA40800FC8E36 /* ViewController.m */,
+				D411651E25ADA40800FC8E36 /* Main.storyboard */,
+				D411652125ADA40F00FC8E36 /* Assets.xcassets */,
+				D411652325ADA40F00FC8E36 /* LaunchScreen.storyboard */,
+				D411652625ADA40F00FC8E36 /* Info.plist */,
+				D411652725ADA40F00FC8E36 /* main.m */,
 			);
 			path = notePod;
 			sourceTree = "<group>";
@@ -82,13 +104,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D411649225AD96CC00FC8E36 /* notePod */ = {
+		D411651125ADA40800FC8E36 /* notePod */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D41164AF25AD96D200FC8E36 /* Build configuration list for PBXNativeTarget "notePod" */;
+			buildConfigurationList = D411652B25ADA40F00FC8E36 /* Build configuration list for PBXNativeTarget "notePod" */;
 			buildPhases = (
-				D411648F25AD96CC00FC8E36 /* Sources */,
-				D411649025AD96CC00FC8E36 /* Frameworks */,
-				D411649125AD96CC00FC8E36 /* Resources */,
+				FC7D0F4AC919D12B03DC60FB /* [CP] Check Pods Manifest.lock */,
+				D411650E25ADA40800FC8E36 /* Sources */,
+				D411650F25ADA40800FC8E36 /* Frameworks */,
+				D411651025ADA40800FC8E36 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -96,23 +119,23 @@
 			);
 			name = notePod;
 			productName = notePod;
-			productReference = D411649325AD96CC00FC8E36 /* notePod.app */;
+			productReference = D411651225ADA40800FC8E36 /* notePod.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D411648B25AD96CC00FC8E36 /* Project object */ = {
+		D411650A25ADA40800FC8E36 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
-					D411649225AD96CC00FC8E36 = {
+					D411651125ADA40800FC8E36 = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
 			};
-			buildConfigurationList = D411648E25AD96CC00FC8E36 /* Build configuration list for PBXProject "notePod" */;
+			buildConfigurationList = D411650D25ADA40800FC8E36 /* Build configuration list for PBXProject "notePod" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -120,57 +143,81 @@
 				en,
 				Base,
 			);
-			mainGroup = D411648A25AD96CC00FC8E36;
-			productRefGroup = D411649425AD96CC00FC8E36 /* Products */;
+			mainGroup = D411650925ADA40800FC8E36;
+			productRefGroup = D411651325ADA40800FC8E36 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D411649225AD96CC00FC8E36 /* notePod */,
+				D411651125ADA40800FC8E36 /* notePod */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D411649125AD96CC00FC8E36 /* Resources */ = {
+		D411651025ADA40800FC8E36 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D41164A925AD96D200FC8E36 /* LaunchScreen.storyboard in Resources */,
-				D41164A625AD96D200FC8E36 /* Assets.xcassets in Resources */,
-				D41164A125AD96CC00FC8E36 /* Main.storyboard in Resources */,
+				D411652525ADA40F00FC8E36 /* LaunchScreen.storyboard in Resources */,
+				D411652225ADA40F00FC8E36 /* Assets.xcassets in Resources */,
+				D411652025ADA40800FC8E36 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FC7D0F4AC919D12B03DC60FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-notePod-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		D411648F25AD96CC00FC8E36 /* Sources */ = {
+		D411650E25ADA40800FC8E36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D41164AC25AD96D200FC8E36 /* main.m in Sources */,
-				D411649E25AD96CC00FC8E36 /* ViewController.m in Sources */,
-				D41164A425AD96CC00FC8E36 /* notePod.xcdatamodeld in Sources */,
-				D411649825AD96CC00FC8E36 /* AppDelegate.m in Sources */,
-				D411649B25AD96CC00FC8E36 /* SceneDelegate.m in Sources */,
+				D411651D25ADA40800FC8E36 /* ViewController.m in Sources */,
+				D411651725ADA40800FC8E36 /* AppDelegate.m in Sources */,
+				D411652825ADA40F00FC8E36 /* main.m in Sources */,
+				D411651A25ADA40800FC8E36 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D411649F25AD96CC00FC8E36 /* Main.storyboard */ = {
+		D411651E25ADA40800FC8E36 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D41164A025AD96CC00FC8E36 /* Base */,
+				D411651F25ADA40800FC8E36 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D41164A725AD96D200FC8E36 /* LaunchScreen.storyboard */ = {
+		D411652325ADA40F00FC8E36 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D41164A825AD96D200FC8E36 /* Base */,
+				D411652425ADA40F00FC8E36 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -178,7 +225,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D41164AD25AD96D200FC8E36 /* Debug */ = {
+		D411652925ADA40F00FC8E36 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -237,7 +284,7 @@
 			};
 			name = Debug;
 		};
-		D41164AE25AD96D200FC8E36 /* Release */ = {
+		D411652A25ADA40F00FC8E36 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -290,8 +337,9 @@
 			};
 			name = Release;
 		};
-		D41164B025AD96D200FC8E36 /* Debug */ = {
+		D411652C25ADA40F00FC8E36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64BD3725024B22C15FDDDAAE /* Pods-notePod.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -307,8 +355,9 @@
 			};
 			name = Debug;
 		};
-		D41164B125AD96D200FC8E36 /* Release */ = {
+		D411652D25ADA40F00FC8E36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 607433EF3181706626A6DECF /* Pods-notePod.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -327,38 +376,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D411648E25AD96CC00FC8E36 /* Build configuration list for PBXProject "notePod" */ = {
+		D411650D25ADA40800FC8E36 /* Build configuration list for PBXProject "notePod" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D41164AD25AD96D200FC8E36 /* Debug */,
-				D41164AE25AD96D200FC8E36 /* Release */,
+				D411652925ADA40F00FC8E36 /* Debug */,
+				D411652A25ADA40F00FC8E36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D41164AF25AD96D200FC8E36 /* Build configuration list for PBXNativeTarget "notePod" */ = {
+		D411652B25ADA40F00FC8E36 /* Build configuration list for PBXNativeTarget "notePod" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D41164B025AD96D200FC8E36 /* Debug */,
-				D41164B125AD96D200FC8E36 /* Release */,
+				D411652C25ADA40F00FC8E36 /* Debug */,
+				D411652D25ADA40F00FC8E36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		D41164A225AD96CC00FC8E36 /* notePod.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				D41164A325AD96CC00FC8E36 /* notePod.xcdatamodel */,
-			);
-			currentVersion = D41164A325AD96CC00FC8E36 /* notePod.xcdatamodel */;
-			path = notePod.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = D411648B25AD96CC00FC8E36 /* Project object */;
+	rootObject = D411650A25ADA40800FC8E36 /* Project object */;
 }
