@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D411649825AD96CC00FC8E36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D411649725AD96CC00FC8E36 /* AppDelegate.m */; };
+		D411649B25AD96CC00FC8E36 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D411649A25AD96CC00FC8E36 /* SceneDelegate.m */; };
+		D411649E25AD96CC00FC8E36 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D411649D25AD96CC00FC8E36 /* ViewController.m */; };
+		D41164A125AD96CC00FC8E36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D411649F25AD96CC00FC8E36 /* Main.storyboard */; };
+		D41164A425AD96CC00FC8E36 /* notePod.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D41164A225AD96CC00FC8E36 /* notePod.xcdatamodeld */; };
+		D41164A625AD96D200FC8E36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D41164A525AD96D200FC8E36 /* Assets.xcassets */; };
+		D41164A925AD96D200FC8E36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41164A725AD96D200FC8E36 /* LaunchScreen.storyboard */; };
+		D41164AC25AD96D200FC8E36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D41164AB25AD96D200FC8E36 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D411649325AD96CC00FC8E36 /* notePod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notePod.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D411649625AD96CC00FC8E36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D411649725AD96CC00FC8E36 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D411649925AD96CC00FC8E36 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		D411649A25AD96CC00FC8E36 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		D411649C25AD96CC00FC8E36 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D411649D25AD96CC00FC8E36 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D41164A025AD96CC00FC8E36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D41164A325AD96CC00FC8E36 /* notePod.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = notePod.xcdatamodel; sourceTree = "<group>"; };
+		D41164A525AD96D200FC8E36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D41164A825AD96D200FC8E36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D41164AA25AD96D200FC8E36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D41164AB25AD96D200FC8E36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D411649025AD96CC00FC8E36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D411648A25AD96CC00FC8E36 = {
+			isa = PBXGroup;
+			children = (
+				D411649525AD96CC00FC8E36 /* notePod */,
+				D411649425AD96CC00FC8E36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D411649425AD96CC00FC8E36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D411649325AD96CC00FC8E36 /* notePod.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D411649525AD96CC00FC8E36 /* notePod */ = {
+			isa = PBXGroup;
+			children = (
+				D411649625AD96CC00FC8E36 /* AppDelegate.h */,
+				D411649725AD96CC00FC8E36 /* AppDelegate.m */,
+				D411649925AD96CC00FC8E36 /* SceneDelegate.h */,
+				D411649A25AD96CC00FC8E36 /* SceneDelegate.m */,
+				D411649C25AD96CC00FC8E36 /* ViewController.h */,
+				D411649D25AD96CC00FC8E36 /* ViewController.m */,
+				D411649F25AD96CC00FC8E36 /* Main.storyboard */,
+				D41164A525AD96D200FC8E36 /* Assets.xcassets */,
+				D41164A725AD96D200FC8E36 /* LaunchScreen.storyboard */,
+				D41164AA25AD96D200FC8E36 /* Info.plist */,
+				D41164AB25AD96D200FC8E36 /* main.m */,
+				D41164A225AD96CC00FC8E36 /* notePod.xcdatamodeld */,
+			);
+			path = notePod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D411649225AD96CC00FC8E36 /* notePod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D41164AF25AD96D200FC8E36 /* Build configuration list for PBXNativeTarget "notePod" */;
+			buildPhases = (
+				D411648F25AD96CC00FC8E36 /* Sources */,
+				D411649025AD96CC00FC8E36 /* Frameworks */,
+				D411649125AD96CC00FC8E36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = notePod;
+			productName = notePod;
+			productReference = D411649325AD96CC00FC8E36 /* notePod.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D411648B25AD96CC00FC8E36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					D411649225AD96CC00FC8E36 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = D411648E25AD96CC00FC8E36 /* Build configuration list for PBXProject "notePod" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D411648A25AD96CC00FC8E36;
+			productRefGroup = D411649425AD96CC00FC8E36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D411649225AD96CC00FC8E36 /* notePod */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D411649125AD96CC00FC8E36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D41164A925AD96D200FC8E36 /* LaunchScreen.storyboard in Resources */,
+				D41164A625AD96D200FC8E36 /* Assets.xcassets in Resources */,
+				D41164A125AD96CC00FC8E36 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D411648F25AD96CC00FC8E36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D41164AC25AD96D200FC8E36 /* main.m in Sources */,
+				D411649E25AD96CC00FC8E36 /* ViewController.m in Sources */,
+				D41164A425AD96CC00FC8E36 /* notePod.xcdatamodeld in Sources */,
+				D411649825AD96CC00FC8E36 /* AppDelegate.m in Sources */,
+				D411649B25AD96CC00FC8E36 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D411649F25AD96CC00FC8E36 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D41164A025AD96CC00FC8E36 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D41164A725AD96D200FC8E36 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D41164A825AD96D200FC8E36 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D41164AD25AD96D200FC8E36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D41164AE25AD96D200FC8E36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D41164B025AD96D200FC8E36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = notePod/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.notePod";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D41164B125AD96D200FC8E36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = notePod/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.notePod";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D411648E25AD96CC00FC8E36 /* Build configuration list for PBXProject "notePod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D41164AD25AD96D200FC8E36 /* Debug */,
+				D41164AE25AD96D200FC8E36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D41164AF25AD96D200FC8E36 /* Build configuration list for PBXNativeTarget "notePod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D41164B025AD96D200FC8E36 /* Debug */,
+				D41164B125AD96D200FC8E36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D41164A225AD96CC00FC8E36 /* notePod.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D41164A325AD96CC00FC8E36 /* notePod.xcdatamodel */,
+			);
+			currentVersion = D41164A325AD96CC00FC8E36 /* notePod.xcdatamodel */;
+			path = notePod.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D411648B25AD96CC00FC8E36 /* Project object */;
+}
