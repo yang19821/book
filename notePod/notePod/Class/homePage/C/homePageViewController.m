@@ -13,19 +13,41 @@
 
 @implementation homePageViewController
 
+
+
+#pragma mark lifeCycle
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setColor];
+    
+    
+}
+#pragma mark UITableViewDelegate
+
+#pragma mark customDelegate
+
+#pragma mark eventResponse
+
+#pragma mark privateMathods
+- (void)setColor{//设置颜色
     self.view.backgroundColor = UIColor.whiteColor;
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:220/255.0 green:220/255.0 blue:220/255.0 alpha:1.0];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UIImage *)clipImageOfRound :(UIImage *)image{
+    //获取上下文
+    UIGraphicsBeginImageContextWithOptions(image.size, NO, 0);
+    //构造bezierpath
+    UIBezierPath *imagePath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
+    //切割
+    [imagePath addClip];
+    //将图片加到path里面
+    [image drawInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
+    //获取图片
+    UIImage *nweImage = UIGraphicsGetImageFromCurrentImageContext();
+    //结束上下文
+    UIGraphicsEndImageContext();
+    return nweImage;
 }
-*/
-
+#pragma mark getter and setter
 @end

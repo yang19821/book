@@ -49,15 +49,9 @@
     UITabBarController *tabbar = [[UITabBarController alloc] init];
     tabbar.viewControllers = @[homeNav,tubiaoNav,rijiNav,userNav];
     tabbar.selectedViewController = homeNav;
-    tabbar.tabBar.tintColor = [UIColor colorWithRed:31/255.0 green:185/255.0 blue:34/255.0 alpha:1.0];
-    tabbar.tabBar.backgroundColor = UIColor.whiteColor;
-//    tabbar.tabBar.backgroundImage = [UIImage imageNamed:@"背景图片"];
-    //渲染图片
-//    for (UITabBarItem *item in tabbar.tabBar.items) {
-//        UIImage *image = item.selectedImage;
-//        UIImage *selectImage = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-//        item.selectedImage = selectImage;
-//    }
+    tabbar.tabBar.tintColor = [UIColor colorWithRed:31/255.0 green:185/255.0 blue:34/255.0 alpha:1.0];//文字颜色
+    tabbar.tabBar.barTintColor = [UIColor colorWithRed:220/255.0 green:220/255.0 blue:220/255.0 alpha:1.0];//底部tabbar的背景颜色
+    //window
     self.window.frame = [UIScreen mainScreen].bounds;
     self.window.rootViewController = tabbar;
     [self.window makeKeyAndVisible];
