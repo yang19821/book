@@ -1,21 +1,21 @@
 //
-//  HomePageViewController.m
+//  tubiaoNavViewController.m
 //  notePod
 //
 //  Created by Choice on 2021/1/12.
 //
 
-#import "HomePageViewController.h"
+#import "tubiaoViewController.h"
 
-@interface HomePageViewController ()
+@interface tubiaoViewController ()
 
 @end
 
-@implementation HomePageViewController
+@implementation tubiaoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = UIColor.greenColor;
+    self.view.backgroundColor = UIColor.whiteColor;
 }
 
 /*

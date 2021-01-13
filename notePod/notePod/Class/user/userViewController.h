@@ -1,5 +1,5 @@
 //
-//  HomePageViewController.h
+//  userNavViewController.h
 //  notePod
 //
 //  Created by Choice on 2021/1/12.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HomePageViewController : UIViewController
+@interface userViewController : UIViewController
 
 @end
 

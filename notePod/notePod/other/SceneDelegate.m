@@ -6,7 +6,10 @@
 //
 
 #import "SceneDelegate.h"
-
+#import "userViewController.h"
+#import "homePageViewController.h"
+#import "tubiaoViewController.h"
+#import "rijiViewController.h"
 @interface SceneDelegate ()
 
 @end
@@ -16,9 +19,49 @@
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
     
-    // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-    // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-    // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+    //home
+    homePageViewController *homeVc = [[homePageViewController alloc] init];
+    homeVc.title = @"主页";
+    UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController:homeVc];
+    UITabBarItem *homeItem = [[UITabBarItem alloc] initWithTitle:@"主页" image:[UIImage imageNamed:@"默认图片"] selectedImage:[UIImage imageNamed:@"选中的图片"]];
+    homeVc.tabBarItem = homeItem;
+    //图表
+    tubiaoViewController *tubiaoVC = [[tubiaoViewController alloc] init];
+    tubiaoVC.title = @"图表";
+    UINavigationController *tubiaoNav = [[UINavigationController alloc] initWithRootViewController:tubiaoVC];
+    UITabBarItem *tubiaoItem = [[UITabBarItem alloc] initWithTitle:@"图表" image:[UIImage imageNamed:@""] selectedImage:[UIImage imageNamed:@""]];
+    tubiaoNav.tabBarItem = tubiaoItem;
+    //日记
+    rijiViewController *rijiVC = [[rijiViewController alloc] init];
+    rijiVC.title = @"每日一记";
+    UINavigationController *rijiNav = [[UINavigationController alloc] initWithRootViewController:rijiVC];
+    UITabBarItem *rijiItem = [[UITabBarItem alloc] initWithTitle:@"日记" image:[UIImage imageNamed:@""] selectedImage:[UIImage imageNamed:@""]];
+    rijiNav.tabBarItem = rijiItem;
+    //我的
+    userViewController *mineVC = [[userViewController alloc] init];
+    mineVC.title = @"个人中心";
+    UINavigationController *userNav = [[UINavigationController alloc] initWithRootViewController:mineVC];
+    UITabBarItem *mineItem = [[UITabBarItem alloc] initWithTitle:@"我的" image:[UIImage imageNamed:@""] selectedImage:[UIImage imageNamed:@""]];
+    userNav.tabBarItem = mineItem;
+    
+    //定制tabbar
+    UITabBarController *tabbar = [[UITabBarController alloc] init];
+    tabbar.viewControllers = @[homeNav,tubiaoNav,rijiNav,userNav];
+    tabbar.selectedViewController = homeNav;
+    tabbar.tabBar.tintColor = [UIColor colorWithRed:31/255.0 green:185/255.0 blue:34/255.0 alpha:1.0];
+    tabbar.tabBar.backgroundColor = UIColor.whiteColor;
+//    tabbar.tabBar.backgroundImage = [UIImage imageNamed:@"背景图片"];
+    //渲染图片
+    for (UITabBarItem *item in tabbar.tabBar.items) {
+        UIImage *image = item.selectedImage;
+        UIImage *selectImage = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        item.selectedImage = selectImage;
+    }
+    self.window.frame = [UIScreen mainScreen].bounds;
+    self.window.rootViewController = tabbar;
+    [self.window makeKeyAndVisible];
+  
+    
 }
 
 
