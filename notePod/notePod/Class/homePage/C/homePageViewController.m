@@ -6,7 +6,7 @@
 //
 
 #import "homePageViewController.h"
-
+#import <SMS_SDK/SMSSDK.h>
 @interface homePageViewController ()
 
 @end
@@ -21,6 +21,19 @@
     [self setColor];
     
     
+}
+- (void)MessageAuthentication{//短信验证功能
+    [SMSSDK getVerificationCodeByMethod:SMSGetCodeMethodSMS phoneNumber:@"17521696445" zone:@"86" result:^(NSError *error) {
+            
+    }];
+    [SMSSDK commitVerificationCode:@"123456" phoneNumber:@"17521696445" zone:@"86" result:^(NSError *error) {
+        if (!error) {
+            NSLog(@"打印---验证成功");
+        }
+        else {
+            NSLog(@"错误信息---%@",error);
+        }
+    }];
 }
 #pragma mark UITableViewDelegate
 

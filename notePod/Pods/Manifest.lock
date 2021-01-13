@@ -1,16 +1,24 @@
 PODS:
   - Masonry (1.1.0)
+  - MOBFoundation (3.2.24)
+  - SMSSDK (3.0.1):
+    - MOBFoundation
 
 DEPENDENCIES:
   - Masonry
+  - SMSSDK
 
 SPEC REPOS:
   trunk:
     - Masonry
+    - MOBFoundation
+    - SMSSDK
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MOBFoundation: 934ee1a43aed452d51942b416bc3dc4d0813ac82
+  SMSSDK: a811c8ea6e89393097037b7cf6493248a40e50f0
 
-PODFILE CHECKSUM: 2918ae8c2b46f80f8bbefe62447f964de117b7e2
+PODFILE CHECKSUM: dd2ffa838c6ad1c66ea8bdfc4a4825259cdc3f33
 
 COCOAPODS: 1.10.1

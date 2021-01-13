@@ -19,6 +19,7 @@
 		D4549E2025ADABAC00F9225A /* tubiaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4549E1F25ADABAC00F9225A /* tubiaoViewController.m */; };
 		D4549E2425ADABB900F9225A /* rijiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4549E2325ADABB900F9225A /* rijiViewController.m */; };
 		D4549E2D25ADADCB00F9225A /* homePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4549E2C25ADADCB00F9225A /* homePageViewController.m */; };
+		D4919C8B25AED47400842731 /* homePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4919C8A25AED47400842731 /* homePageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,8 @@
 		D4549E2325ADABB900F9225A /* rijiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rijiViewController.m; sourceTree = "<group>"; };
 		D4549E2B25ADADCB00F9225A /* homePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = homePageViewController.h; sourceTree = "<group>"; };
 		D4549E2C25ADADCB00F9225A /* homePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = homePageViewController.m; sourceTree = "<group>"; };
+		D4919C8925AED47400842731 /* homePageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = homePageView.h; sourceTree = "<group>"; };
+		D4919C8A25AED47400842731 /* homePageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = homePageView.m; sourceTree = "<group>"; };
 		D937212075974096F30D4719 /* libPods-notePod.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-notePod.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -116,6 +119,8 @@
 		D4549E2925ADAD9F00F9225A /* V */ = {
 			isa = PBXGroup;
 			children = (
+				D4919C8925AED47400842731 /* homePageView.h */,
+				D4919C8A25AED47400842731 /* homePageView.m */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 			files = (
 				D411651D25ADA40800FC8E36 /* ViewController.m in Sources */,
 				D411651725ADA40800FC8E36 /* AppDelegate.m in Sources */,
+				D4919C8B25AED47400842731 /* homePageView.m in Sources */,
 				D4549E2425ADABB900F9225A /* rijiViewController.m in Sources */,
 				D4549E1C25ADABA200F9225A /* userViewController.m in Sources */,
 				D4549E2025ADABAC00F9225A /* tubiaoViewController.m in Sources */,

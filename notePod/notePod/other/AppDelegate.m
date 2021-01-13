@@ -6,7 +6,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import <SMS_SDK/SMSSDK.h>
+#import <MOBFoundation/MobSDK+Privacy.h>
 @interface AppDelegate ()
 
 @end
@@ -15,8 +16,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [MobSDK uploadPrivacyPermissionStatus:YES onResult:^(BOOL success) {
+            
+            NSLog(@"用户隐私回调---%d",success);
+    }];
 
-//    [NSThread sleepForTimeInterval:2.0];
     
     return YES;
 }
