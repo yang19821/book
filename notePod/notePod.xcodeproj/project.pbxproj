@@ -133,8 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				D4E9A30D25ADA98B009F0FF2 /* homePage */,
-				D4E9A30E25ADA98B009F0FF2 /* user */,
 				D4E9A30F25ADA98B009F0FF2 /* tubiao */,
+				D4E9A30E25ADA98B009F0FF2 /* user */,
 				D4E9A31025ADA98B009F0FF2 /* riji */,
 			);
 			path = Class;

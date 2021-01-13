@@ -23,25 +23,26 @@
     homePageViewController *homeVc = [[homePageViewController alloc] init];
     homeVc.title = @"主页";
     UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController:homeVc];
-    UITabBarItem *homeItem = [[UITabBarItem alloc] initWithTitle:@"主页" image:[UIImage imageNamed:@"默认图片"] selectedImage:[UIImage imageNamed:@"选中的图片"]];
+    UIImage *homeImage = [UIImage imageNamed:@"home"];
+    UITabBarItem *homeItem = [[UITabBarItem alloc] initWithTitle:@"主页" image:homeImage selectedImage:homeImage];
     homeVc.tabBarItem = homeItem;
     //图表
     tubiaoViewController *tubiaoVC = [[tubiaoViewController alloc] init];
     tubiaoVC.title = @"图表";
     UINavigationController *tubiaoNav = [[UINavigationController alloc] initWithRootViewController:tubiaoVC];
-    UITabBarItem *tubiaoItem = [[UITabBarItem alloc] initWithTitle:@"图表" image:[UIImage imageNamed:@""] selectedImage:[UIImage imageNamed:@""]];
+    UITabBarItem *tubiaoItem = [[UITabBarItem alloc] initWithTitle:@"图表" image:[UIImage imageNamed:@"tubiao"] selectedImage:[UIImage imageNamed:@"tubiao"]];
     tubiaoNav.tabBarItem = tubiaoItem;
     //日记
     rijiViewController *rijiVC = [[rijiViewController alloc] init];
     rijiVC.title = @"每日一记";
     UINavigationController *rijiNav = [[UINavigationController alloc] initWithRootViewController:rijiVC];
-    UITabBarItem *rijiItem = [[UITabBarItem alloc] initWithTitle:@"日记" image:[UIImage imageNamed:@""] selectedImage:[UIImage imageNamed:@""]];
+    UITabBarItem *rijiItem = [[UITabBarItem alloc] initWithTitle:@"日记" image:[UIImage imageNamed:@"riji"] selectedImage:[UIImage imageNamed:@"riji"]];
     rijiNav.tabBarItem = rijiItem;
     //我的
     userViewController *mineVC = [[userViewController alloc] init];
     mineVC.title = @"个人中心";
     UINavigationController *userNav = [[UINavigationController alloc] initWithRootViewController:mineVC];
-    UITabBarItem *mineItem = [[UITabBarItem alloc] initWithTitle:@"我的" image:[UIImage imageNamed:@""] selectedImage:[UIImage imageNamed:@""]];
+    UITabBarItem *mineItem = [[UITabBarItem alloc] initWithTitle:@"我的" image:[UIImage imageNamed:@"user"] selectedImage:[UIImage imageNamed:@"user"]];
     userNav.tabBarItem = mineItem;
     
     //定制tabbar
@@ -52,11 +53,11 @@
     tabbar.tabBar.backgroundColor = UIColor.whiteColor;
 //    tabbar.tabBar.backgroundImage = [UIImage imageNamed:@"背景图片"];
     //渲染图片
-    for (UITabBarItem *item in tabbar.tabBar.items) {
-        UIImage *image = item.selectedImage;
-        UIImage *selectImage = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-        item.selectedImage = selectImage;
-    }
+//    for (UITabBarItem *item in tabbar.tabBar.items) {
+//        UIImage *image = item.selectedImage;
+//        UIImage *selectImage = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//        item.selectedImage = selectImage;
+//    }
     self.window.frame = [UIScreen mainScreen].bounds;
     self.window.rootViewController = tabbar;
     [self.window makeKeyAndVisible];
