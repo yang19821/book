@@ -6,7 +6,7 @@
 //
 
 #import "tableFooterView.h"
-
+#import "tallyViewController.h"
 @implementation tableFooterView
 + (UIView *)creatFooterView{
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, PM_w,200)];
@@ -32,6 +32,12 @@
 }
 + (void)clickAddMoney{
     //跳转到记一笔
-    NSLog(@"打印---dianji");
+    UITabBarController *tabBarVc = (UITabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+        UINavigationController *nav = (UINavigationController *)tabBarVc.selectedViewController;
+    tallyViewController *tallyVc = [[tallyViewController alloc] init];
+        [nav pushViewController:tallyVc animated:YES];
+//    tallyVc.modalPresentationStyle = UIModalPresentationFullScreen;
+//    [nav presentViewController:tallyVc animated:YES completion:nil];
+    
 }
 @end

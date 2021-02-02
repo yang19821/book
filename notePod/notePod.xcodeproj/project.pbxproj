@@ -24,6 +24,9 @@
 		D47A05B625C8DEB1004FE230 /* homePageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D47A05B525C8DEB1004FE230 /* homePageTableViewCell.m */; };
 		D4E64EB825C8ECD400EE8247 /* tableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E64EB725C8ECD400EE8247 /* tableHeaderView.m */; };
 		D4E64EBE25C9257600EE8247 /* tableFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E64EBD25C9257600EE8247 /* tableFooterView.m */; };
+		D4E64EC525C9341700EE8247 /* tallyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E64EC425C9341700EE8247 /* tallyViewController.m */; };
+		D4E825F825C9520B00A9A8B3 /* tallySegment.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E825F725C9520B00A9A8B3 /* tallySegment.m */; };
+		D4E825FD25C9577E00A9A8B3 /* tallyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E825FC25C9577E00A9A8B3 /* tallyScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,12 @@
 		D4E64EB725C8ECD400EE8247 /* tableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tableHeaderView.m; sourceTree = "<group>"; };
 		D4E64EBC25C9257600EE8247 /* tableFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tableFooterView.h; sourceTree = "<group>"; };
 		D4E64EBD25C9257600EE8247 /* tableFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tableFooterView.m; sourceTree = "<group>"; };
+		D4E64EC325C9341700EE8247 /* tallyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tallyViewController.h; sourceTree = "<group>"; };
+		D4E64EC425C9341700EE8247 /* tallyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tallyViewController.m; sourceTree = "<group>"; };
+		D4E825F625C9520B00A9A8B3 /* tallySegment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tallySegment.h; sourceTree = "<group>"; };
+		D4E825F725C9520B00A9A8B3 /* tallySegment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tallySegment.m; sourceTree = "<group>"; };
+		D4E825FB25C9577E00A9A8B3 /* tallyScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tallyScrollView.h; sourceTree = "<group>"; };
+		D4E825FC25C9577E00A9A8B3 /* tallyScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tallyScrollView.m; sourceTree = "<group>"; };
 		D937212075974096F30D4719 /* libPods-notePod.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-notePod.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -151,10 +160,40 @@
 			path = C;
 			sourceTree = "<group>";
 		};
+		D4E64EC025C933F700EE8247 /* tally */ = {
+			isa = PBXGroup;
+			children = (
+				D4E64EC125C933F700EE8247 /* C */,
+				D4E64EC225C933F700EE8247 /* V */,
+			);
+			path = tally;
+			sourceTree = "<group>";
+		};
+		D4E64EC125C933F700EE8247 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				D4E64EC325C9341700EE8247 /* tallyViewController.h */,
+				D4E64EC425C9341700EE8247 /* tallyViewController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		D4E64EC225C933F700EE8247 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				D4E825F625C9520B00A9A8B3 /* tallySegment.h */,
+				D4E825F725C9520B00A9A8B3 /* tallySegment.m */,
+				D4E825FB25C9577E00A9A8B3 /* tallyScrollView.h */,
+				D4E825FC25C9577E00A9A8B3 /* tallyScrollView.m */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
 		D4E9A30C25ADA98B009F0FF2 /* Class */ = {
 			isa = PBXGroup;
 			children = (
 				D4E9A30D25ADA98B009F0FF2 /* homePage */,
+				D4E64EC025C933F700EE8247 /* tally */,
 				D4E9A30F25ADA98B009F0FF2 /* tubiao */,
 				D4E9A30E25ADA98B009F0FF2 /* user */,
 				D4E9A31025ADA98B009F0FF2 /* riji */,
@@ -312,6 +351,7 @@
 			files = (
 				D428C0FC25B0385A0056018A /* AppDelegate.h in Sources */,
 				D411651D25ADA40800FC8E36 /* ViewController.m in Sources */,
+				D4E825F825C9520B00A9A8B3 /* tallySegment.m in Sources */,
 				D411651725ADA40800FC8E36 /* AppDelegate.m in Sources */,
 				D4E64EBE25C9257600EE8247 /* tableFooterView.m in Sources */,
 				D4E64EB825C8ECD400EE8247 /* tableHeaderView.m in Sources */,
@@ -321,6 +361,8 @@
 				D4549E1C25ADABA200F9225A /* userViewController.m in Sources */,
 				D4549E2025ADABAC00F9225A /* tubiaoViewController.m in Sources */,
 				D411652825ADA40F00FC8E36 /* main.m in Sources */,
+				D4E825FD25C9577E00A9A8B3 /* tallyScrollView.m in Sources */,
+				D4E64EC525C9341700EE8247 /* tallyViewController.m in Sources */,
 				D4549E2D25ADADCB00F9225A /* homePageViewController.m in Sources */,
 				D411651A25ADA40800FC8E36 /* SceneDelegate.m in Sources */,
 			);

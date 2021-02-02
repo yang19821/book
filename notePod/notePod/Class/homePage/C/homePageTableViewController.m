@@ -22,6 +22,7 @@
     UIView *footer = [tableFooterView creatFooterView];
     self.tableView.tableHeaderView = header;
     self.tableView.tableFooterView = footer;
+    
 }
 - (void)viewWillDisappear:(BOOL)animated{
     
