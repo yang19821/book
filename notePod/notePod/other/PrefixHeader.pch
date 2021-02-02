@@ -1,0 +1,19 @@
+//
+//  PrefixHeader.pch
+//  notePod
+//
+//  Created by Choice on 2021/2/2.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+//头文件
+#import <Masonry/Masonry.h>
+//长度
+#define PM_w [UIScreen mainScreen].bounds.size.width
+#define PM_h [UIScreen mainScreen].bounds.size.height
+//颜色
+#define chengse [UIColor colorWithRed:237/255.0 green:99/255.0 blue:25/255.0 alpha:1.0]
+
+
+#endif /* PrefixHeader_pch */

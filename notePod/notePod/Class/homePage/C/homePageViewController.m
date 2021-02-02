@@ -6,6 +6,7 @@
 //
 
 #import "homePageViewController.h"
+#import "homePageTableViewController.h"
 #import <SMS_SDK/SMSSDK.h>
 @interface homePageViewController ()
 
@@ -18,6 +19,9 @@
 #pragma mark lifeCycle
 - (void)viewDidLoad {
     [super viewDidLoad];
+    homePageTableViewController *tableVc = [[homePageTableViewController alloc] init];
+    [self addChildViewController:tableVc];
+    
     [self setColor];
     
     

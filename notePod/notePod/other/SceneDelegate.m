@@ -7,7 +7,7 @@
 
 #import "SceneDelegate.h"
 #import "userViewController.h"
-#import "homePageViewController.h"
+#import "homePageTableViewController.h"
 #import "tubiaoViewController.h"
 #import "rijiViewController.h"
 @interface SceneDelegate ()
@@ -20,7 +20,7 @@
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
     
     //home
-    homePageViewController *homeVc = [[homePageViewController alloc] init];
+    homePageTableViewController *homeVc = [[homePageTableViewController alloc] init];
     homeVc.title = @"主页";
     UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController:homeVc];
     UIImage *homeImage = [UIImage imageNamed:@"home"];

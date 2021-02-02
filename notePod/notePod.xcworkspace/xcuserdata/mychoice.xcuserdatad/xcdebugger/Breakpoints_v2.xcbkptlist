@@ -20,5 +20,69 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D793CDE2-05C5-48F8-B73A-88E4E5805305"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "notePod/Class/homePage/V/homePageTableViewCell.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "-drawRectCell"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "509EA067-13EE-4E82-BFA2-9460847D100B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "notePod/Class/homePage/V/homePageTableViewCell.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "-drawRectCell"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "509EA067-13EE-4E82-BFA2-9460847D100B - e2805bafc5cc4459"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[homePageTableViewCell drawRectCell]"
+                  moduleName = "notePod"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mychoice/Desktop/book/notePod/notePod/Class/homePage/V/homePageTableViewCell.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "546">
+               </Location>
+               <Location
+                  uuid = "509EA067-13EE-4E82-BFA2-9460847D100B - 4c5f5783519d228e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__37-[homePageTableViewCell drawRectCell]_block_invoke.37"
+                  moduleName = "notePod"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mychoice/Desktop/book/notePod/notePod/Class/homePage/V/homePageTableViewCell.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
