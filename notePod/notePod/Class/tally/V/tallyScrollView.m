@@ -14,9 +14,9 @@
     tallyScrollView *scrollView = [[tallyScrollView alloc] init];
     scrollView.contentSize = CGSizeMake(2 *PM_w, 0);
     scrollView.pagingEnabled = YES;
-    scrollView.backgroundColor = UIColor.greenColor;
-    scrollView.showsHorizontalScrollIndicator = YES;
-    
+    scrollView.backgroundColor = UIColor.whiteColor;
+    scrollView.showsHorizontalScrollIndicator = NO;
+   
     return scrollView;
 }
 /*

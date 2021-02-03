@@ -8,6 +8,7 @@
 #import <UIKit/UIKit.h>
 #import "tallySegment.h"
 #import "tallyScrollView.h"
+#import "tallyBaseViewController.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface tallyViewController : UIViewController

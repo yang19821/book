@@ -63,7 +63,7 @@
     if (_income == nil) {
         _income = [[UILabel alloc] init];
         _income.text = @"+0.00";//收入
-        _income.textColor = UIColor.greenColor;
+        _income.textColor = guGreen;
         _income.textAlignment = NSTextAlignmentRight;
         _income.font = [UIFont systemFontOfSize:16];
     }

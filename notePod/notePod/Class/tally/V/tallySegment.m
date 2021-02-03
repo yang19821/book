@@ -10,11 +10,17 @@
 @implementation tallySegment
 
 + (tallySegment *)initTallySegment{
-    NSArray *items = [NSArray arrayWithObjects:@"支出",@"收入", nil];
-    tallySegment *segment = [[tallySegment alloc] initWithItems:items];
+    tallySegment *segment = [[tallySegment alloc] initWithItems:@[@"支出",@"收入"]];
     segment.selectedSegmentIndex = 0;
-    segment.tintColor = chengse;
-//    segment.backgroundColor = UIColor.redColor;
+    segment.selectedSegmentTintColor = chengse;
+    [segment setTitleTextAttributes:@{
+            NSForegroundColorAttributeName:chengse,
+            NSFontAttributeName:[UIFont systemFontOfSize:16],
+    } forState:UIControlStateNormal];
+    [segment setTitleTextAttributes:@{
+        NSForegroundColorAttributeName:UIColor.whiteColor,
+    } forState:UIControlStateSelected];
+    segment.backgroundColor = UIColor.whiteColor;
     return segment;
 }
 

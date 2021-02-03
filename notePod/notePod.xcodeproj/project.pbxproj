@@ -27,6 +27,8 @@
 		D4E64EC525C9341700EE8247 /* tallyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E64EC425C9341700EE8247 /* tallyViewController.m */; };
 		D4E825F825C9520B00A9A8B3 /* tallySegment.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E825F725C9520B00A9A8B3 /* tallySegment.m */; };
 		D4E825FD25C9577E00A9A8B3 /* tallyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E825FC25C9577E00A9A8B3 /* tallyScrollView.m */; };
+		D4E8260225CA441800A9A8B3 /* tallyBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E8260125CA441800A9A8B3 /* tallyBaseViewController.m */; };
+		D4E8260A25CA679700A9A8B3 /* tallyBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E8260925CA679700A9A8B3 /* tallyBaseView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +69,10 @@
 		D4E825F725C9520B00A9A8B3 /* tallySegment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tallySegment.m; sourceTree = "<group>"; };
 		D4E825FB25C9577E00A9A8B3 /* tallyScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tallyScrollView.h; sourceTree = "<group>"; };
 		D4E825FC25C9577E00A9A8B3 /* tallyScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tallyScrollView.m; sourceTree = "<group>"; };
+		D4E8260025CA441800A9A8B3 /* tallyBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tallyBaseViewController.h; sourceTree = "<group>"; };
+		D4E8260125CA441800A9A8B3 /* tallyBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tallyBaseViewController.m; sourceTree = "<group>"; };
+		D4E8260825CA679700A9A8B3 /* tallyBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tallyBaseView.h; sourceTree = "<group>"; };
+		D4E8260925CA679700A9A8B3 /* tallyBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tallyBaseView.m; sourceTree = "<group>"; };
 		D937212075974096F30D4719 /* libPods-notePod.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-notePod.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -174,6 +180,8 @@
 			children = (
 				D4E64EC325C9341700EE8247 /* tallyViewController.h */,
 				D4E64EC425C9341700EE8247 /* tallyViewController.m */,
+				D4E8260025CA441800A9A8B3 /* tallyBaseViewController.h */,
+				D4E8260125CA441800A9A8B3 /* tallyBaseViewController.m */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -185,6 +193,8 @@
 				D4E825F725C9520B00A9A8B3 /* tallySegment.m */,
 				D4E825FB25C9577E00A9A8B3 /* tallyScrollView.h */,
 				D4E825FC25C9577E00A9A8B3 /* tallyScrollView.m */,
+				D4E8260825CA679700A9A8B3 /* tallyBaseView.h */,
+				D4E8260925CA679700A9A8B3 /* tallyBaseView.m */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -350,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D428C0FC25B0385A0056018A /* AppDelegate.h in Sources */,
+				D4E8260225CA441800A9A8B3 /* tallyBaseViewController.m in Sources */,
 				D411651D25ADA40800FC8E36 /* ViewController.m in Sources */,
 				D4E825F825C9520B00A9A8B3 /* tallySegment.m in Sources */,
 				D411651725ADA40800FC8E36 /* AppDelegate.m in Sources */,
@@ -360,6 +371,7 @@
 				D4549E2425ADABB900F9225A /* rijiViewController.m in Sources */,
 				D4549E1C25ADABA200F9225A /* userViewController.m in Sources */,
 				D4549E2025ADABAC00F9225A /* tubiaoViewController.m in Sources */,
+				D4E8260A25CA679700A9A8B3 /* tallyBaseView.m in Sources */,
 				D411652825ADA40F00FC8E36 /* main.m in Sources */,
 				D4E825FD25C9577E00A9A8B3 /* tallyScrollView.m in Sources */,
 				D4E64EC525C9341700EE8247 /* tallyViewController.m in Sources */,
