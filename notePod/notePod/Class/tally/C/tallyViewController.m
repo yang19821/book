@@ -7,7 +7,7 @@
 
 #import "tallyViewController.h"
 
-@interface tallyViewController ()
+@interface tallyViewController () <UIScrollViewDelegate>
 
 @end
 
@@ -35,6 +35,24 @@
 - (void)successToEdit{
     //完成跳转
 }
+- (void)changeIndex{
+    //segment改变调用
+    CGFloat offsetX = PM_w * self.segment.selectedSegmentIndex;
+    [self.scrollView setContentOffset:CGPointMake(offsetX, 0) animated:YES];
+}
+
+#pragma mark delegate
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    CGFloat offsetX = self.scrollView.contentOffset.x;
+    CGFloat x = offsetX / PM_w;
+    int index = (int)round(x);
+    self.segment.selectedSegmentIndex = index;
+}
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+   
+}
+
 #pragma mark add and masonry
 - (void)MasonryAndAdd{
     
@@ -46,6 +64,7 @@
         make.top.mas_equalTo(self.view.mas_safeAreaLayoutGuideTop);
     }];
     [self.view addSubview:self.scrollView];
+    self.scrollView.delegate = self;
     [_scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.bottom.right.mas_equalTo(self.view);
         make.top.mas_equalTo(self.segment.mas_bottom);
@@ -56,6 +75,7 @@
 - (tallySegment *)segment{
     if (!_segment) {
         _segment = [tallySegment initTallySegment];
+        [_segment addTarget:self action:@selector(changeIndex) forControlEvents:UIControlEventValueChanged];
     }
     return _segment;
 }

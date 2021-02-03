@@ -19,7 +19,9 @@
     [btn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(120);
         make.height.mas_equalTo(60);
-        make.center.mas_equalTo(view);
+//        make.center.mas_equalTo(view);
+        make.centerX.mas_equalTo(view);
+        make.top.mas_equalTo(view.mas_top).offset(30);
     }];
     btn.backgroundColor = chengse;
     btn.layer.cornerRadius = 25;

@@ -7,11 +7,13 @@
 
 #import "tallyBaseView.h"
 
-@interface tallyBaseView ()
+@interface tallyBaseView ()<UITextViewDelegate, UITextFieldDelegate>
 
 @property (nonatomic, strong) UIView *lineView; //账单下方的线
 @property (nonatomic, strong) UILabel *yuanLabel; //账单后方的元
 @property (nonatomic, strong) UIColor *themeColor; //主题颜色
+@property (nonatomic, strong) UIImageView *bookImageView; //备注图标
+@property (nonatomic, strong) UITextView *noteTextView; //备注输入框
 
 @end
 
@@ -27,9 +29,45 @@
     [self addSubview:self.inputNumField];
     [self addSubview:self.lineView];
     [self addSubview:self.yuanLabel];
+    [self addSubview:self.bookImageView];
+    [self addSubview:self.noteTextView];
+    
+    self.noteTextView.delegate = self;
+    self.inputNumField.delegate = self;
     
     [self setMasonry];
 }
+#pragma mark public
+- (void)setColorWithThemeColor:(UIColor *)color{
+    self.themeColor = color;
+    [self reloadInputViews];
+}
+#pragma mark delegate of textView
+- (void)textViewDidBeginEditing:(UITextView *)textView{
+    if ([textView.text  isEqual: @"备注"]) {
+        textView.text = @"";
+        textView.textColor = UIColor.blackColor;
+    }
+    
+}
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text{
+    if ([text isEqualToString:@"\n"]) {
+        [textView resignFirstResponder];
+        return NO;
+    }
+    else
+        return YES;
+}
+- (void)textViewDidEndEditing:(UITextView *)textView{
+    if (textView.text.length == 0) {
+        textView = nil;
+    }
+}
+
+#pragma mark delegate of textfield
+
+
+
 #pragma mark masonry
 - (void)setMasonry{
     [self.inputNumField mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -50,12 +88,20 @@
         make.top.mas_equalTo(self.inputNumField.mas_bottom).offset(20);
         make.left.mas_equalTo(self.mas_left).offset(20);
     }];
+    [self.bookImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.width.mas_equalTo(30);
+        make.left.mas_equalTo(self.mas_left).offset(20);
+        make.top.mas_equalTo(self.lineView.mas_bottom).offset(30);
+    }];
+    [self.noteTextView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.lineView.mas_bottom).offset(30);
+        make.left.mas_equalTo(self.bookImageView.mas_right).offset(30);
+        make.right.mas_equalTo(self.mas_right).offset(-30);
+        make.height.mas_equalTo(400);
+    }];
+    
 }
-#pragma mark public
-- (void)setColorWithThemeColor:(UIColor *)color{
-    self.themeColor = color;
-    [self reloadInputViews];
-}
+
 #pragma mark getter and setter
 - (UIView *)lineView{
     if(!_lineView){
@@ -84,10 +130,27 @@
     }
     return _yuanLabel;
 }
--(UIColor *)themeColor{
+- (UIColor *)themeColor{
     if (!_themeColor) {
         _themeColor = guGreen;
     }
     return _themeColor;
+}
+- (UIImageView *)bookImageView{
+    if (!_bookImageView) {
+        _bookImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"beizhu"]];
+    }
+    return _bookImageView;
+}
+- (UITextView *)noteTextView{
+    if (!_noteTextView) {
+        _noteTextView = [[UITextView alloc] init];
+        _noteTextView.textColor = [UIColor colorWithRed:192/255.0 green:192/255.0 blue:192/255.0 alpha:1];
+        _noteTextView.backgroundColor = UIColor.whiteColor;
+        _noteTextView.font = [UIFont systemFontOfSize:25];
+        _noteTextView.text = @"备注";
+        
+    }
+    return _noteTextView;
 }
 @end

@@ -26,7 +26,13 @@
     tallyBaseView *baseView = [tallyBaseView initTallyBaseViewWithFrame:self.view.frame];
     [baseView setColorWithThemeColor:color];
     [self.view addSubview:baseView];
+    //手势
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:imagev action:@selector(clickView)];
+    [imagev addGestureRecognizer:tapGesture];
     return self;
+}
+- (void)clickView{
+    
 }
 /*
 #pragma mark - Navigation
