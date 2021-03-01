@@ -135,13 +135,6 @@
 			path = notePod;
 			sourceTree = "<group>";
 		};
-		D4549E2825ADAD9F00F9225A /* M */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = M;
-			sourceTree = "<group>";
-		};
 		D4549E2925ADAD9F00F9225A /* V */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,7 +209,6 @@
 			children = (
 				D4549E2A25ADAD9F00F9225A /* C */,
 				D4549E2925ADAD9F00F9225A /* V */,
-				D4549E2825ADAD9F00F9225A /* M */,
 			);
 			path = homePage;
 			sourceTree = "<group>";
