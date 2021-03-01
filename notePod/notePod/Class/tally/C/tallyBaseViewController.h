@@ -6,10 +6,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "tallyBaseView.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface tallyBaseViewController : UIViewController
+
+@property (nonatomic, strong) tallyBaseView *baseView;
 
 - (instancetype)initWithThemeColor: (UIColor *)color;
 

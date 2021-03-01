@@ -9,6 +9,10 @@
 
 @interface tallyViewController () <UIScrollViewDelegate>
 
+@property (nonatomic, assign) NSString *num; //收入数字
+@property (nonatomic, copy) NSString *noteString; //收入备注
+
+
 @end
 
 @implementation tallyViewController
@@ -31,16 +35,41 @@
 - (void)viewWillDisappear:(BOOL)animated{
     self.tabBarController.tabBar.hidden = NO;
 }
+- (void)dealloc{
+    //移除通知
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"TallyViewToController" object:nil];
+}
 #pragma mark click Mathord
 - (void)successToEdit{
-    //完成跳转
+    //收起键盘
+    [self clickView];
+    //判断num是否不为0，写入数据库
+    NSLog(@"写入数据:%@；%@",_num,_noteString);
+    //日期
+    NSDate *date = [NSDate date];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy-MM-dd"];//样式
+    NSString *time_now = [formatter stringFromDate:date];
+    NSLog(@"格式化后的时间%@", time_now);
+    //返回主页
+    [self.navigationController popViewControllerAnimated:YES];
 }
 - (void)changeIndex{
     //segment改变调用
     CGFloat offsetX = PM_w * self.segment.selectedSegmentIndex;
     [self.scrollView setContentOffset:CGPointMake(offsetX, 0) animated:YES];
 }
-
+- (void)clickView{
+    //收起键盘
+    [UIApplication.sharedApplication.windows.firstObject endEditing:YES];
+    
+}
+- (void)updateData:(NSNotification *)notification {
+    //通知接收数据
+    NSDictionary *dic = notification.object;
+    self.num = dic[@"num"];
+    self.noteString = dic[@"note"];
+}
 #pragma mark delegate
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
@@ -48,9 +77,6 @@
     CGFloat x = offsetX / PM_w;
     int index = (int)round(x);
     self.segment.selectedSegmentIndex = index;
-}
--(void)scrollViewDidScroll:(UIScrollView *)scrollView{
-   
 }
 
 #pragma mark add and masonry
@@ -82,13 +108,25 @@
 - (tallyScrollView *)scrollView{
     if (!_scrollView) {
         _scrollView = [tallyScrollView initTallyScrollView];
+        //支出
         tallyBaseViewController *zhichuVC = [[tallyBaseViewController alloc] initWithThemeColor:guGreen];
         zhichuVC.view.frame = CGRectMake(0, 0, PM_w, _scrollView.bounds.size.height);
+        zhichuVC.baseView.inputNumField.tag = 101;
+        zhichuVC.baseView.noteTextView.tag = 102;
+
         [_scrollView addSubview:zhichuVC.view];
+        //收入
         tallyBaseViewController *shouruVC = [[tallyBaseViewController alloc] initWithThemeColor:UIColor.redColor];
         shouruVC.view.frame = CGRectMake(PM_w, 0, 2*PM_w, _scrollView.bounds.size.height);
+        
         [_scrollView addSubview:shouruVC.view];
+        shouruVC.baseView.inputNumField.tag = 201;
+        shouruVC.baseView.noteTextView.tag = 202;
+        //手势-点击收起键盘
+        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickView)];
+        [_scrollView addGestureRecognizer:tapGesture];
     }
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateData:) name:@"TallyViewToController" object:nil];
     return _scrollView;
 }
 

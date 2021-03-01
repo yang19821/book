@@ -6,7 +6,7 @@
 //
 
 #import "tallyBaseViewController.h"
-#import "tallyBaseView.h"
+
 @interface tallyBaseViewController ()
 
 @end
@@ -23,25 +23,12 @@
     imagev.image = [UIImage imageNamed:@"background"];
     [self.view addSubview:imagev];
     //baseview
-    tallyBaseView *baseView = [tallyBaseView initTallyBaseViewWithFrame:self.view.frame];
-    [baseView setColorWithThemeColor:color];
-    [self.view addSubview:baseView];
-    //手势
-    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:imagev action:@selector(clickView)];
-    [imagev addGestureRecognizer:tapGesture];
+    _baseView = [tallyBaseView initTallyBaseViewWithFrame:self.view.frame];
+    [_baseView setColorWithThemeColor:color];
+    [self.view addSubview:_baseView];
+
     return self;
 }
-- (void)clickView{
-    
-}
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -3,7 +3,7 @@
 //  notePod
 //
 //  Created by Choice on 2021/2/2.
-//
+// 记账页面
 
 #import <UIKit/UIKit.h>
 #import "tallySegment.h"

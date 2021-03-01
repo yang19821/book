@@ -38,8 +38,6 @@
         UINavigationController *nav = (UINavigationController *)tabBarVc.selectedViewController;
     tallyViewController *tallyVc = [[tallyViewController alloc] init];
         [nav pushViewController:tallyVc animated:YES];
-//    tallyVc.modalPresentationStyle = UIModalPresentationFullScreen;
-//    [nav presentViewController:tallyVc animated:YES completion:nil];
     
 }
 @end

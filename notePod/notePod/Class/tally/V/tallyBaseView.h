@@ -11,8 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface tallyBaseView : UIView
 
-@property (nonatomic, strong) UITextField *inputNumField; //账单
-
+@property (nonatomic, strong) UITextField *inputNumField; //账单输入框
+@property (nonatomic, strong) UITextView *noteTextView; //备注输入框
 
 + (tallyBaseView *)initTallyBaseViewWithFrame: (CGRect)frame;
 

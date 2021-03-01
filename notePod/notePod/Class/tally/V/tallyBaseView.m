@@ -13,7 +13,7 @@
 @property (nonatomic, strong) UILabel *yuanLabel; //账单后方的元
 @property (nonatomic, strong) UIColor *themeColor; //主题颜色
 @property (nonatomic, strong) UIImageView *bookImageView; //备注图标
-@property (nonatomic, strong) UITextView *noteTextView; //备注输入框
+@property (nonatomic, copy) NSMutableDictionary *dataDic;
 
 @end
 
@@ -62,11 +62,28 @@
     if (textView.text.length == 0) {
         textView = nil;
     }
+    [self.dataDic setValue:textView.text forKey:@"note"];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"TallyViewToController" object:self.dataDic];
 }
 
 #pragma mark delegate of textfield
-
-
+- (void)textFieldDidEndEditing:(UITextField *)textField{
+    int moneyNum = [textField.text intValue];
+    if (textField.tag == 101) {
+        moneyNum = -moneyNum;
+    }
+    NSString *numString = [NSString stringWithFormat:@"%d",moneyNum];
+    [self.dataDic setValue:numString forKey:@"num"];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"TallyViewToController" object:self.dataDic];
+}
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
+    //限制最大字数
+    if (range.location <=4) {
+        return YES;
+    }
+    else
+        return NO;
+}
 
 #pragma mark masonry
 - (void)setMasonry{
@@ -118,6 +135,7 @@
         _inputNumField.font = [UIFont systemFontOfSize:90];
         _inputNumField.placeholder = @"0.00";
         _inputNumField.keyboardType = UIKeyboardTypeNumberPad;
+        
     }
     return _inputNumField;
 }
@@ -149,8 +167,19 @@
         _noteTextView.backgroundColor = UIColor.whiteColor;
         _noteTextView.font = [UIFont systemFontOfSize:25];
         _noteTextView.text = @"备注";
+        _noteTextView.textContainerInset = UIEdgeInsetsMake(10, 10, 10, 10);//内边距
+        _noteTextView.autocorrectionType  =  UITextAutocorrectionTypeNo; //自动纠错
+        _noteTextView.autocapitalizationType  =  UITextAutocapitalizationTypeNone; //自动大写
         
     }
     return _noteTextView;
+}
+- (NSMutableDictionary *)dataDic{
+    if (!_dataDic) {
+        _dataDic = [[NSMutableDictionary alloc] init];
+        [_dataDic setValue:@0 forKey:@"num"];
+        [_dataDic setValue:@"" forKey:@"note"];
+    }
+    return _dataDic;
 }
 @end
