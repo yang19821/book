@@ -9,11 +9,14 @@
 #import "homePageTableViewCell.h"
 #import "tableHeaderView.h"
 #import "tableFooterView.h"
+#import "mySqliteManage.h"
 @interface homePageTableViewController ()
 
-@end
+@property (nonatomic, copy) NSDictionary *dateDic;//临时接收数据字典
 
+@end
 @implementation homePageTableViewController
+
 #pragma mark lifeCycle
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,6 +28,11 @@
     
 }
 - (void)viewWillDisappear:(BOOL)animated{
+    
+}
+- (void)viewWillAppear:(BOOL)animated{
+    //获取当前时间
+   
     
 }
 #pragma mark - Table view data source
@@ -42,23 +50,31 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     homePageTableViewCell *cell = [homePageTableViewCell initWithReuseIdentifier:@"Cell"];
+    if (indexPath.row == 0) {
+        cell.title.text = @"今天";
+     self.dateDic = [[mySqliteManage sharedInstanceSqlite] sqliteNumOfDay];
+    }
     if (indexPath.row == 1) {
         cell.title.text = @"本周";
+        self.dateDic = [[mySqliteManage sharedInstanceSqlite] sqliteNumOfWeek];
+        
     }
    else if (indexPath.row == 2) {
         cell.title.text = @"本月";
+       self.dateDic = [[mySqliteManage sharedInstanceSqlite] sqliteNumOfMonth];
     }
    else if (indexPath.row == 3){
        cell.title.text = @"本年";
+       self.dateDic = [[mySqliteManage sharedInstanceSqlite] sqliteNumOfYear];
    }
+    cell.income.text = self.dateDic[@"incomeNum"];
+    cell.spending.text = self.dateDic[@"expendNum"];
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.row == 0) {
-        //跳转到图表对应界面
-        NSLog(@"点击---%ld",(long)indexPath.row);
-        
+        [[mySqliteManage sharedInstanceSqlite] sqliteNumOfWeek];
     }
     else if (indexPath.row == 1) {
         NSLog(@"点击---%ld",(long)indexPath.row);
@@ -79,6 +95,11 @@
 #pragma mark Add and Mansary
 
 #pragma mark getter and setter
-
+- (NSDictionary *)dateDic{
+    if (_dateDic == nil) {
+        _dateDic = [[NSDictionary alloc] init];
+    }
+    return _dateDic;
+}
 
 @end

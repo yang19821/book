@@ -1,24 +1,30 @@
 PODS:
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
   - Masonry (1.1.0)
   - MOBFoundation (3.2.24)
   - SMSSDK (3.0.1):
     - MOBFoundation
 
 DEPENDENCIES:
+  - FMDB
   - Masonry
   - SMSSDK
 
 SPEC REPOS:
   trunk:
+    - FMDB
     - Masonry
     - MOBFoundation
     - SMSSDK
 
 SPEC CHECKSUMS:
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MOBFoundation: 934ee1a43aed452d51942b416bc3dc4d0813ac82
   SMSSDK: a811c8ea6e89393097037b7cf6493248a40e50f0
 
-PODFILE CHECKSUM: dd2ffa838c6ad1c66ea8bdfc4a4825259cdc3f33
+PODFILE CHECKSUM: b3dacaf50bd3965dc0377c28ec0241046d8a5f0e
 
 COCOAPODS: 1.10.1

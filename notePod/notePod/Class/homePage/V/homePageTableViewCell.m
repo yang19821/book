@@ -24,27 +24,27 @@
     [self addSubview:self.income];
     [self addSubview:self.spending];
     [_titleImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.height.width.mas_equalTo(20);
+        make.height.width.mas_equalTo(30);
         make.centerY.mas_equalTo(self);
-        make.left.mas_equalTo(self.mas_left).offset(20);
+        make.left.mas_equalTo(self.mas_left).offset(30);
     }];
     [_title mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.mas_equalTo(32);
         make.width.mas_equalTo(200);
         make.centerY.mas_equalTo(self);
-        make.left.mas_equalTo(self.mas_left).offset(45);
+        make.left.mas_equalTo(self.mas_left).offset(75);
     }];
     [_income mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.height.mas_equalTo(20);
-        make.width.mas_equalTo(50);
-        make.right.mas_equalTo(self.mas_right).offset(-40);
-        make.top.mas_equalTo(20);
+        make.height.mas_equalTo(30);
+        make.width.mas_equalTo(500);
+        make.right.mas_equalTo(self.mas_right).offset(-70);
+        make.bottom.mas_equalTo(self.mas_centerY).offset(0);
     }];
     [_spending mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.height.mas_equalTo(20);
-        make.right.mas_equalTo(-40);
-        make.width.mas_equalTo(50);
-        make.bottom.mas_equalTo(-20);
+        make.height.mas_equalTo(30);
+        make.right.mas_equalTo(-70);
+        make.width.mas_equalTo(500);
+        make.top.mas_equalTo(self.mas_centerY).offset(0);
     }];
     return self;
 }
@@ -55,27 +55,27 @@
         _title.text = @"今天";
         _title.textColor = chengse;
         _title.textAlignment = NSTextAlignmentLeft;
-        _title.font = [UIFont systemFontOfSize:20];
+        _title.font = [UIFont systemFontOfSize:28];
     }
     return _title;
 }
 - (UILabel *)income{
     if (_income == nil) {
         _income = [[UILabel alloc] init];
-        _income.text = @"+0.00";//收入
+        _income.text = @"+0";//收入
         _income.textColor = guGreen;
         _income.textAlignment = NSTextAlignmentRight;
-        _income.font = [UIFont systemFontOfSize:16];
+        _income.font = [UIFont systemFontOfSize:24];
     }
     return _income;
 }
 - (UILabel *)spending{
     if (_spending == nil) {
         _spending = [[UILabel alloc] init];
-        _spending.text = @"-0.00";//支出
+        _spending.text = @"-0";//支出
         _spending.textColor = UIColor.redColor;
         _spending.textAlignment = NSTextAlignmentRight;
-        _spending.font = [UIFont systemFontOfSize:16];
+        _spending.font = [UIFont systemFontOfSize:24];
     }
     return _spending;
 }
@@ -85,15 +85,5 @@
     }
     return _titleImageView;
 }
-//- (void)awakeFromNib {
-//    [super awakeFromNib];
-//    // Initialization code
-//}
-//
-//- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-//    [super setSelected:selected animated:animated];
-//
-//    // Configure the view for the selected state
-//}
 
 @end

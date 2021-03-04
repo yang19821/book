@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7B85E9322143DAA421EDE258 /* libPods-notePod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D937212075974096F30D4719 /* libPods-notePod.a */; };
+		CD6DB1B725EF692000379E9D /* mySqliteManage.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6DB1B625EF692000379E9D /* mySqliteManage.m */; };
 		D411651725ADA40800FC8E36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D411651625ADA40800FC8E36 /* AppDelegate.m */; };
 		D411651A25ADA40800FC8E36 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D411651925ADA40800FC8E36 /* SceneDelegate.m */; };
 		D411651D25ADA40800FC8E36 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D411651C25ADA40800FC8E36 /* ViewController.m */; };
@@ -34,6 +35,8 @@
 /* Begin PBXFileReference section */
 		607433EF3181706626A6DECF /* Pods-notePod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notePod.release.xcconfig"; path = "Target Support Files/Pods-notePod/Pods-notePod.release.xcconfig"; sourceTree = "<group>"; };
 		64BD3725024B22C15FDDDAAE /* Pods-notePod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notePod.debug.xcconfig"; path = "Target Support Files/Pods-notePod/Pods-notePod.debug.xcconfig"; sourceTree = "<group>"; };
+		CD6DB1B525EF692000379E9D /* mySqliteManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mySqliteManage.h; sourceTree = "<group>"; };
+		CD6DB1B625EF692000379E9D /* mySqliteManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mySqliteManage.m; sourceTree = "<group>"; };
 		D411651225ADA40800FC8E36 /* notePod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notePod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D411651525ADA40800FC8E36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D411651625ADA40800FC8E36 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -105,6 +108,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CD6DB1B325EF68F600379E9D /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				CD6DB1B425EF68F600379E9D /* sqlite */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		CD6DB1B425EF68F600379E9D /* sqlite */ = {
+			isa = PBXGroup;
+			children = (
+				CD6DB1B525EF692000379E9D /* mySqliteManage.h */,
+				CD6DB1B625EF692000379E9D /* mySqliteManage.m */,
+			);
+			path = sqlite;
+			sourceTree = "<group>";
+		};
+		CD7EB6E125ECDDAE0074E6C2 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
 		D411650925ADA40800FC8E36 = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +191,7 @@
 			children = (
 				D4E64EC125C933F700EE8247 /* C */,
 				D4E64EC225C933F700EE8247 /* V */,
+				CD7EB6E125ECDDAE0074E6C2 /* M */,
 			);
 			path = tally;
 			sourceTree = "<group>";
@@ -195,6 +223,7 @@
 		D4E9A30C25ADA98B009F0FF2 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				CD6DB1B325EF68F600379E9D /* Tool */,
 				D4E9A30D25ADA98B009F0FF2 /* homePage */,
 				D4E64EC025C933F700EE8247 /* tally */,
 				D4E9A30F25ADA98B009F0FF2 /* tubiao */,
@@ -351,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD6DB1B725EF692000379E9D /* mySqliteManage.m in Sources */,
 				D428C0FC25B0385A0056018A /* AppDelegate.h in Sources */,
 				D4E8260225CA441800A9A8B3 /* tallyBaseViewController.m in Sources */,
 				D411651D25ADA40800FC8E36 /* ViewController.m in Sources */,

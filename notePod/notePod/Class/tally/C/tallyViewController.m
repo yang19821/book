@@ -6,7 +6,7 @@
 //
 
 #import "tallyViewController.h"
-
+#import "mySqliteManage.h"
 @interface tallyViewController () <UIScrollViewDelegate>
 
 @property (nonatomic, assign) NSString *num; //收入数字
@@ -44,13 +44,9 @@
     //收起键盘
     [self clickView];
     //判断num是否不为0，写入数据库
-    NSLog(@"写入数据:%@；%@",_num,_noteString);
-    //日期
-    NSDate *date = [NSDate date];
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"yyyy-MM-dd"];//样式
-    NSString *time_now = [formatter stringFromDate:date];
-    NSLog(@"格式化后的时间%@", time_now);
+    if (![_num isEqual:@0] && !(_num == nil)) {
+        [self updateDB];
+    }
     //返回主页
     [self.navigationController popViewControllerAnimated:YES];
 }
@@ -78,7 +74,13 @@
     int index = (int)round(x);
     self.segment.selectedSegmentIndex = index;
 }
-
+#pragma mark private Mothord
+- (void)updateDB{
+    //日期
+    NSString *time_now = [[mySqliteManage sharedInstanceSqlite] getCurrentDate];
+    //数据库操作
+    [[mySqliteManage sharedInstanceSqlite] sqliteAddDataWithTime:time_now money:_num note:_noteString];
+}
 #pragma mark add and masonry
 - (void)MasonryAndAdd{
     

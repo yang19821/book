@@ -11,17 +11,16 @@
 @interface AppDelegate ()
 
 @end
-
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //验证码
     [MobSDK uploadPrivacyPermissionStatus:YES onResult:^(BOOL success) {
             
-            NSLog(@"用户隐私回调---%d",success);
+//            NSLog(@"用户隐私回调---%d",success);
     }];
 
-    
     return YES;
 }
 
