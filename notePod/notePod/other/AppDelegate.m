@@ -7,7 +7,7 @@
 
 #import "AppDelegate.h"
 #import <SMS_SDK/SMSSDK.h>
-#import <MOBFoundation/MobSDK+Privacy.h>
+#import <MOBFoundation/MobSDK+Privacy.h>//移动到登录模块
 @interface AppDelegate ()
 
 @end

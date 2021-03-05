@@ -25,13 +25,16 @@
     UIView *footer = [tableFooterView creatFooterView];
     self.tableView.tableHeaderView = header;
     self.tableView.tableFooterView = footer;
+    [self setupRefresh];
     
 }
 - (void)viewWillDisappear:(BOOL)animated{
-    
+    [super viewWillDisappear:YES];
 }
 - (void)viewWillAppear:(BOOL)animated{
-    //获取当前时间
+    [super viewWillAppear:YES];
+    //刷新数据
+    [self.tableView reloadData];
    
     
 }
@@ -74,7 +77,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.row == 0) {
-        [[mySqliteManage sharedInstanceSqlite] sqliteNumOfWeek];
+         
     }
     else if (indexPath.row == 1) {
         NSLog(@"点击---%ld",(long)indexPath.row);
@@ -89,7 +92,19 @@
 #pragma mark public
 
 #pragma mark private
-
+- (void)setupRefresh{
+    UIRefreshControl *refresh = [[UIRefreshControl alloc] init];
+    [refresh addTarget:self action:@selector(reloadData) forControlEvents:UIControlEventValueChanged];
+    self.tableView.refreshControl = refresh;
+}
+- (void)reloadData{
+    //刷新数据
+    [self.tableView reloadData];
+    __weak typeof(self) weakSelf = self;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [weakSelf.tableView.refreshControl endRefreshing];
+    });
+}
 #pragma mark click Target
 
 #pragma mark Add and Mansary

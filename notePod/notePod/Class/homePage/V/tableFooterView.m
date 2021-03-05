@@ -34,7 +34,7 @@
 }
 + (void)clickAddMoney{
     //跳转到记一笔
-    UITabBarController *tabBarVc = (UITabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+    UITabBarController *tabBarVc = (UITabBarController *)UIApplication.sharedApplication.windows.firstObject.rootViewController;
         UINavigationController *nav = (UINavigationController *)tabBarVc.selectedViewController;
     tallyViewController *tallyVc = [[tallyViewController alloc] init];
         [nav pushViewController:tallyVc animated:YES];

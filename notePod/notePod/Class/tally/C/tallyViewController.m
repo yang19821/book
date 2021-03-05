@@ -7,6 +7,7 @@
 
 #import "tallyViewController.h"
 #import "mySqliteManage.h"
+#import "homePageViewController.h"
 @interface tallyViewController () <UIScrollViewDelegate>
 
 @property (nonatomic, assign) NSString *num; //收入数字
@@ -24,6 +25,7 @@
     
 }
 - (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:YES];
     self.title = @"记一笔";
     self.view.backgroundColor = UIColor.whiteColor;
     self.tabBarController.tabBar.hidden = YES;
@@ -33,6 +35,7 @@
  
 }
 - (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:YES];
     self.tabBarController.tabBar.hidden = NO;
 }
 - (void)dealloc{
@@ -47,6 +50,7 @@
     if (![_num isEqual:@0] && !(_num == nil)) {
         [self updateDB];
     }
+    
     //返回主页
     [self.navigationController popViewControllerAnimated:YES];
 }

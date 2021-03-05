@@ -18,17 +18,22 @@
     
 }
 - (instancetype)initWithThemeColor:(UIColor *)color{
+    self = [super init];
     //背景图
     UIImageView *imagev = [[UIImageView alloc] initWithFrame:self.view.frame];
     imagev.image = [UIImage imageNamed:@"background"];
     [self.view addSubview:imagev];
     //baseview
-    _baseView = [tallyBaseView initTallyBaseViewWithFrame:self.view.frame];
-    [_baseView setColorWithThemeColor:color];
-    [self.view addSubview:_baseView];
+    [self.baseView setColorWithThemeColor:color];
+    [self.view addSubview:self.baseView];
 
     return self;
 }
-
+- (tallyBaseView *)baseView{
+    if (!_baseView) {
+        _baseView = [tallyBaseView initTallyBaseViewWithFrame:self.view.frame];
+    }
+    return _baseView;
+}
 
 @end

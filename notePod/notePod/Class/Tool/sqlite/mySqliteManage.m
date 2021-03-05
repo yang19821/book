@@ -102,14 +102,13 @@ static id dbPath;
     }
     //打开数据库
     if ([db open]) {
-        NSLog(@"打开数据库成功");
+        
     } else {
         NSLog(@"打开数据库失败");
     }
 }
 - (void)closeSqlite{
     if ([db close]) {
-        NSLog(@"关闭数据库成功");
     } else {
         NSLog(@"关闭数据库失败");
     }

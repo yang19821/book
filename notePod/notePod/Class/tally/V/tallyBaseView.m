@@ -13,7 +13,7 @@
 @property (nonatomic, strong) UILabel *yuanLabel; //账单后方的元
 @property (nonatomic, strong) UIColor *themeColor; //主题颜色
 @property (nonatomic, strong) UIImageView *bookImageView; //备注图标
-@property (nonatomic, copy) NSMutableDictionary *dataDic;
+@property (nonatomic, strong) NSMutableDictionary *dataDic;
 
 @end
 
@@ -60,7 +60,7 @@
 }
 - (void)textViewDidEndEditing:(UITextView *)textView{
     if (textView.text.length == 0) {
-        textView = nil;
+        textView.text = nil;
     }
     [self.dataDic setValue:textView.text forKey:@"note"];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"TallyViewToController" object:self.dataDic];
